@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Container from '@/components/section/Container'
 import { HeroBannerTopProp } from './types'
-import styles from './styles.module.css';
 
 export default function HeroBannerTop({
   img,
@@ -12,8 +11,8 @@ export default function HeroBannerTop({
 }: HeroBannerTopProp) {
 
   return (
-    <section className={styles.section}>
-      <div className={styles.overlay}>
+    <section className='relative h-screen'>
+      <div className='absolute w-full h-screen after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
         <Image
           src={img}
           alt={imgAlt}
@@ -25,11 +24,11 @@ export default function HeroBannerTop({
           blurDataURL={blurDataUrl}
         />
       </div>
-      <div className={styles.contentContainer}>
+      <div className='absolute bottom-16 left-0'>
         <Container>
           <div>
-            <h1 className={styles.title}>{title}</h1>
-            <p className={styles.subtitle}>{subtitle}</p>
+            <h1 className='text-4xl md:text-6xl mb-4'>{title}</h1>
+            <p className='text-lg md:text-xl'>{subtitle}</p>
           </div>
         </Container>
       </div>

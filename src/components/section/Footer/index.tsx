@@ -1,8 +1,64 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { IoLogoInstagram } from 'react-icons/io5'
+import Container from '@/components/section/Container'
+import { mainMenu } from '@/data/menus'
+import LogoMain from '@public/images/logo.png'
+import FooterBg from '@public/images/footer-bg.png'
+
 export default function Footer() {
 
   return (
-    <footer>
-
+    <footer className='bg-neutral-950 relative mt-52 pb-10'>
+      <div className='absolute w-full h-80 -top-24'>
+        <Image
+          src={FooterBg}
+          alt='footer background'
+          sizes='100vw, 33vw'
+          style={{ objectFit: 'cover' }}
+          fill
+        />
+      </div>
+      <Container>
+        <div className='text-neutral-50 relative pt-44'>
+          <div className='flex justify-between gap-5 items-end'>
+            <div>
+              <div>
+                <Link href='/' className='py-7'>
+                  <Image
+                    src={LogoMain}
+                    alt='trip by the sea logo'
+                    width={350}
+                    height={150}
+                    priority
+                  />
+                </Link>
+              </div>
+              <div className='mt-5'>
+                <div className='text-neutral-400'>For any enquiries</div>
+                <div className='text-xl'>hello@tripbythesea.com</div>
+              </div>
+              <div className='mt-4'>
+                <Link href='/'>
+                  <IoLogoInstagram size={30} />
+                </Link>
+              </div>
+            </div>
+            <div className='flex flex-col gap-3'>
+              {mainMenu.map(({ title, url }) => {
+                return (
+                  <Link key={title} href={url} className=''>
+                    {title}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+        <div className='text-center text-neutral-50 mt-24'>
+          Copyright 2024 tripbythesea.com All Right Reserved
+        </div>
+      </Container>
     </footer>
   )
 };

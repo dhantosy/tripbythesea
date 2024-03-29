@@ -16,16 +16,15 @@ export default function CardHorizontal({
 
   return (
     <div className='relative rounded-2xl overflow-hidden'>
-      <div className='w-full pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-50 after:h-full after:absolute'>
+      <div className='w-full pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
         <Image
           src={img}
           alt={imgAlt}
           sizes='100vw, 33vw'
           style={{ objectFit: 'cover' }}
-          fill
-          priority
           placeholder='blur'
           blurDataURL={blurDataUrl}
+          fill
         />
       </div>
       <div className='absolute z-index-10 top-0 left-0 p-6 text-neutral-50 h-full w-full'>

@@ -21,6 +21,24 @@ const data = [
     duration: '3 - 5 Days',
     price: 'from $500',
   },
+  {
+    image: BannerImage.src,
+    blurDataUrl: BannerImage.blurDataURL,
+    title: 'Komodo Island',
+    topText: 'Indonesia',
+    url: '/',
+    duration: '3 - 5 Days',
+    price: 'from $500',
+  },
+  {
+    image: BannerImage.src,
+    blurDataUrl: BannerImage.blurDataURL,
+    title: 'Nusa Penida',
+    topText: 'Indonesia',
+    url: '/',
+    duration: '3 - 5 Days',
+    price: 'from $500',
+  },
 ];
 
 export default function PopularDestinations() {
@@ -29,14 +47,14 @@ export default function PopularDestinations() {
     <Container>
       <div className='mb-10'>
         <h2 className='text-4xl'>Top Destinations</h2>
-        <p>The most popular destinations in the past months</p>
+        <p>The most popular destinations</p>
       </div>
-      <div className='flex gap-12'>
+      <div className='flex flex-wrap -m-5'>
         {data.map((item) => {
           const { image, blurDataUrl, title, topText, url, duration, price } = item;
 
           return (
-            <div className='flex-1' key={item.title}>
+            <div className='flex-[50%] p-5' key={item.title}>
               <CardHorizontal
                 img={image}
                 imgAlt={title}

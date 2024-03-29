@@ -13,14 +13,14 @@ export default function Home() {
         pretext='Indonesia'
         title='Komodo Island'
         subtitle='Exploring the Enchanting Wonders of Komodo Island: Indonesia`s Natural Treasure'
-        btnText='Book Now'
+        btnText='Check Now'
         btnUrl='/'
-        btnSecondaryText='Explore Trips'
+        btnSecondaryText='Explore'
         btnSecondaryUrl='/'
       />
-      <div className='py-24'>
+      <section className='py-24'>
         <PopularDestinations />
-      </div>
+      </section>
     </main>
   );
 }

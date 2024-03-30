@@ -1,45 +1,6 @@
-import CardHorizontal from '@/components/ui/CardHorizontal'
-import BannerImage from '@public/images/komodo-2.jpg';
+import CardHorizontalDestination from '@/components/ui/CardHorizontalDestination'
 import Container from '@/components/section/Container';
-
-const data = [
-  {
-    image: BannerImage.src,
-    blurDataUrl: BannerImage.blurDataURL,
-    title: 'Komodo Island',
-    topText: 'Indonesia',
-    url: '/',
-    duration: '3 - 5 Days',
-    price: 'from $500',
-  },
-  {
-    image: BannerImage.src,
-    blurDataUrl: BannerImage.blurDataURL,
-    title: 'Nusa Penida',
-    topText: 'Indonesia',
-    url: '/',
-    duration: '3 - 5 Days',
-    price: 'from $500',
-  },
-  {
-    image: BannerImage.src,
-    blurDataUrl: BannerImage.blurDataURL,
-    title: 'Komodo Island',
-    topText: 'Indonesia',
-    url: '/',
-    duration: '3 - 5 Days',
-    price: 'from $500',
-  },
-  {
-    image: BannerImage.src,
-    blurDataUrl: BannerImage.blurDataURL,
-    title: 'Nusa Penida',
-    topText: 'Indonesia',
-    url: '/',
-    duration: '3 - 5 Days',
-    price: 'from $500',
-  },
-];
+import { destinations } from '@/data/destinations';
 
 export default function PopularDestinations() {
 
@@ -50,12 +11,12 @@ export default function PopularDestinations() {
         <p>The most popular destinations</p>
       </div>
       <div className='flex flex-wrap -m-5'>
-        {data.map((item) => {
+        {destinations.map((item) => {
           const { image, blurDataUrl, title, topText, url, duration, price } = item;
 
           return (
             <div className='flex-[50%] p-5' key={item.title}>
-              <CardHorizontal
+              <CardHorizontalDestination
                 img={image}
                 imgAlt={title}
                 blurDataUrl={blurDataUrl || ''}

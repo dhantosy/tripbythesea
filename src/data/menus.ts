@@ -1,11 +1,11 @@
 export const mainMenu = [
   {
     title: 'Destinations',
-    url: '/'
+    url: '/destinations'
   },
   {
     title: 'About Us',
-    url: '/'
+    url: '/about-us'
   },
   {
     title: 'Insider Guides',

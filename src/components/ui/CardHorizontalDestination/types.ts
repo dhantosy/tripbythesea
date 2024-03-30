@@ -1,4 +1,4 @@
-export interface CardHorizontalProp {
+export interface CardHorizontaDestinationlProp {
   img: string;
   imgAlt: string;
   blurDataUrl: string;

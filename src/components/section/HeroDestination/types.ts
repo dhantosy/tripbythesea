@@ -1,6 +1,6 @@
 interface GalleryDestinationProp {
   src: string;
-  srcBlurData: string;
+  srcBlurData?: string;
   alt: string;
 }
 

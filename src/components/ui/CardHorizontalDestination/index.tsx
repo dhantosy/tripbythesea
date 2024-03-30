@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
-import { CardHorizontalProp } from './types'
+import { CardHorizontaDestinationlProp } from './types'
 
-export default function CardHorizontal({
+export default function CardHorizontalDestination({
   img,
   imgAlt,
   blurDataUrl,
@@ -12,7 +12,7 @@ export default function CardHorizontal({
   duration,
   price,
   url,
-}: CardHorizontalProp) {
+}: CardHorizontaDestinationlProp) {
 
   return (
     <div className='relative rounded-2xl overflow-hidden'>

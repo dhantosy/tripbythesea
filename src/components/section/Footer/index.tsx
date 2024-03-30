@@ -34,8 +34,8 @@ export default function Footer() {
                   />
                 </Link>
               </div>
-              <div className='mt-5'>
-                <div className='text-neutral-400'>For any enquiries</div>
+              <div className='mt-8'>
+                <div className='text-neutral-400'>Drop us a message</div>
                 <div className='text-xl'>hello@tripbythesea.com</div>
               </div>
               <div className='mt-4'>

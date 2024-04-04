@@ -39,8 +39,8 @@ export default function Footer() {
                 <div className='text-neutral-400'>Drop us a message</div>
                 <div className='text-xl'>hello@tripbythesea.com</div>
               </div>
-              <div className='mt-4'>
-                <Link href='/'>
+              <div className='mt-4 inline-block'>
+                <Link href='/' aria-label='Go to Trip by the sea instagram account'>
                   <IoLogoInstagram size={30} />
                 </Link>
               </div>

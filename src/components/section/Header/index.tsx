@@ -28,11 +28,12 @@ export default function Header() {
                 alt='trip by the sea logo'
                 width={!active ? 350 : 200}
                 height={!active ? 57 : 33}
+                sizes='(min-width: 420px) 350px, 90vw'
                 priority
               />
             </Link>
           </div>
-          <div className='flex gap-12'>
+          <div className='gap-12 hidden md:flex'>
             {mainMenu.map(({ title, url}) => {
               return (
                 <Link key={title} href={url} className='py-6 flex items-center'>

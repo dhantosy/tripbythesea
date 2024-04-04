@@ -20,7 +20,7 @@ export default function CardHorizontalDestination({
         <Image
           src={img}
           alt={imgAlt}
-          sizes='100vw, 33vw'
+          sizes="(min-width: 1340px) 590px, 100vw"
           style={{ objectFit: 'cover' }}
           placeholder='blur'
           blurDataURL={blurDataUrl}

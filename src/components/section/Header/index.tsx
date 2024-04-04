@@ -22,7 +22,7 @@ export default function Header() {
       <Container>
         <div className='flex justify-between text-lg align-middle'>
           <div className='relative flex'>
-            <Link href='/' className='py-6'>
+            <Link href='/' className='py-6' aria-label='go to home page'>
               <Image
                 src={LogoMain}
                 alt='trip by the sea logo'
@@ -36,7 +36,7 @@ export default function Header() {
           <div className='gap-12 hidden md:flex'>
             {mainMenu.map(({ title, url}) => {
               return (
-                <Link key={title} href={url} className='py-6 flex items-center'>
+                <Link key={title} href={url} className='py-6 flex items-center' aria-label={`Go to ${title} page`}>
                   {title}
                 </Link>
               )

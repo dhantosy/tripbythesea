@@ -38,10 +38,10 @@ export default function HeroBannerTop({
           <p className='text-lg md:text-xl text-neutral-300 md:max-w-xl'>{subtitle}</p>
           <div className='flex mt-9 gap-4'>
             <Button asChild size='lg'>
-              <Link href={btnUrl}>{btnText}</Link>
+              <Link href={btnUrl} aria-label={`Go to ${title} page`}>{btnText}</Link>
             </Button>
             <Button asChild size='lg' variant='ghost'>
-              <Link href={btnSecondaryUrl}>{btnSecondaryText}</Link>
+              <Link href={btnSecondaryUrl} aria-label='Go to destination page'>{btnSecondaryText}</Link>
             </Button>
           </div>
         </Container>

@@ -5,6 +5,5 @@ export interface CardHorizontaDestinationlProp {
   topText: string;
   title: string;
   url: string;
-  duration: string;
-  price: string;
+  reviews: string;
 }

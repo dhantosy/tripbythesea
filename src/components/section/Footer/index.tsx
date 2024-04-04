@@ -28,7 +28,7 @@ export default function Footer() {
                   <Image
                     src={LogoMain}
                     alt='trip by the sea logo'
-                    sizes='(min-width: 420px) 350px, 90vw'
+                    sizes='(max-width: 768px) 208px, 350px'
                     width={350}
                     height={150}
                     priority

@@ -41,7 +41,7 @@ export default function CardHorizontalDestination({
               </div>
             </div>
             <Button asChild size='sm'>
-              <Link href={url}>Check Now</Link>
+              <Link href={url} aria-label={`Go to ${title} page`}>Check Now</Link>
             </Button>
           </div>
         </div>

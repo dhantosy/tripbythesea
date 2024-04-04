@@ -24,7 +24,7 @@ export default function Footer() {
           <div className='flex justify-between gap-5 items-end'>
             <div>
               <div>
-                <Link href='/' className='py-7'>
+                <Link href='/' className='py-7' aria-label='go to home'>
                   <Image
                     src={LogoMain}
                     alt='trip by the sea logo'

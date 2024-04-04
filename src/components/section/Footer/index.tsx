@@ -14,7 +14,7 @@ export default function Footer() {
         <Image
           src={FooterBg}
           alt='footer background'
-          sizes='100vw, 33vw'
+          sizes='100vw'
           style={{ objectFit: 'cover' }}
           fill
         />
@@ -28,6 +28,7 @@ export default function Footer() {
                   <Image
                     src={LogoMain}
                     alt='trip by the sea logo'
+                    sizes='(min-width: 420px) 350px, 90vw'
                     width={350}
                     height={150}
                     priority

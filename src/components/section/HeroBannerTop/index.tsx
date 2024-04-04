@@ -23,7 +23,7 @@ export default function HeroBannerTop({
         <Image
           src={img}
           alt={imgAlt}
-          sizes='100vw, 33vw'
+          sizes='100vw'
           style={{ objectFit: 'cover' }}
           fill
           priority

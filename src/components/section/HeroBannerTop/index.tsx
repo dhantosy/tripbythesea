@@ -35,7 +35,7 @@ export default function HeroBannerTop({
         <Container>
           <div className='text-1xl md:text-2xl mb-4 text-neutral-50'>{pretext}</div>
           <h1 className='text-4xl md:text-8xl mb-4 text-neutral-50'>{title}</h1>
-          <p className='text-lg md:text-xl text-neutral-300 md:max-w-xl'>{subtitle}</p>
+          <p className='text-lg md:text-xl text-neutral-200 md:max-w-xl'>{subtitle}</p>
           <div className='flex mt-9 gap-4'>
             <Button asChild size='lg'>
               <Link href={btnUrl} aria-label={`Go to ${title} page`}>{btnText}</Link>

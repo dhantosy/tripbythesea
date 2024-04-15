@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/Button'
 import { CardHorizontalNewsProp } from './types'
 
 export default function CardHorizontalDestination({
@@ -17,7 +16,7 @@ export default function CardHorizontalDestination({
       <div className='flex flex-wrap -mx-3'>
         <div className='flex-[35%] px-3'>
           <div className='relative rounded-2xl overflow-hidden'>
-            <div className='w-full pb-[80%] after:content-[""] after:w-full after:bg-black after:opacity-20 after:h-full after:absolute'>
+            <div className='w-full pb-[80%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
               <Image
                 src={img}
                 alt={imgAlt}

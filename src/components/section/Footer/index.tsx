@@ -28,7 +28,7 @@ export default function Footer() {
                   <Image
                     src={LogoMain}
                     alt='trip by the sea logo'
-                    sizes='(min-width: 420px) 350px, 90vw'
+                    sizes='(max-width: 768px) 208px, 350px'
                     width={350}
                     height={150}
                     priority
@@ -37,27 +37,29 @@ export default function Footer() {
               </div>
               <div className='mt-8'>
                 <div className='text-neutral-400'>Drop us a message</div>
-                <div className='text-xl'>hello@tripbythesea.com</div>
+                <div className='text-lg'>hello@tripbythesea.com</div>
               </div>
-              <div className='mt-4'>
-                <Link href='/'>
+              <div className='mt-4 inline-block'>
+                <Link href='/' aria-label='Go to Trip by the sea instagram account'>
                   <IoLogoInstagram size={30} />
                 </Link>
               </div>
             </div>
-            <div className='flex flex-col gap-3'>
-              {mainMenu.map(({ title, url }) => {
-                return (
-                  <Link key={title} href={url} className=''>
-                    {title}
-                  </Link>
-                )
-              })}
+            <div className='flex flex-col items-end'>
+              <div className='flex gap-10'>
+                {mainMenu.map(({ title, url }) => {
+                  return (
+                    <Link key={title} href={url} className=''>
+                      {title}
+                    </Link>
+                  )
+                })}
+              </div>
+              <div className='text-neutral-50 mt-8'>
+                Copyright 2024 tripbythesea.com
+              </div>
             </div>
           </div>
-        </div>
-        <div className='text-center text-neutral-50 mt-24'>
-          Copyright 2024 tripbythesea.com All Right Reserved
         </div>
       </Container>
     </footer>

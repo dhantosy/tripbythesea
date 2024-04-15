@@ -12,7 +12,7 @@ export default function PopularDestinations() {
       </div>
       <div className='flex flex-wrap -m-5'>
         {destinations.map((item) => {
-          const { image, blurDataUrl, title, topText, url, duration, price } = item;
+          const { image, blurDataUrl, title, topText, url, reviews } = item;
 
           return (
             <div className='flex-[50%] p-5' key={item.title}>
@@ -23,8 +23,7 @@ export default function PopularDestinations() {
                 topText={topText}
                 title={title}
                 url={url}
-                duration={duration}
-                price={price}
+                reviews={reviews}
               />
             </div>
           )

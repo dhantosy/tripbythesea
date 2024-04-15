@@ -18,25 +18,26 @@ export default function Header() {
   }, [scrollPosition]);
 
   return (
-    <header className={!active ? 'fixed w-full left-0 top-0 z-40 text-neutral-50' : 'fixed w-full left-0 top-0 z-40 bg-neutral-800 text-neutral-50'}>
+    <header className={!active ? 'fixed w-full left-0 top-0 z-40 text-neutral-50 transition-all' : 'fixed w-full left-0 top-0 z-40 bg-neutral-800 text-neutral-50 transition-all'}>
       <Container>
         <div className='flex justify-between text-lg align-middle'>
-          <div className='relative flex'>
-            <Link href='/' className='py-6' aria-label='go to home page'>
+          <div className='relative flex max-w-52 md:max-w-full'>
+            <Link href='/' className={!active ? 'py-6 transition-all' : 'py-4 transition-all'} aria-label='go to home page'>
               <Image
                 src={LogoMain}
                 alt='trip by the sea logo'
-                width={!active ? 350 : 200}
-                height={!active ? 57 : 33}
-                sizes='(min-width: 420px) 350px, 90vw'
+                width={!active ? 350 : 208}
+                height={!active ? 57 : 34}
+                sizes='(max-width: 768px) 208px, 350px'
                 priority
+                className='transition-all'
               />
             </Link>
           </div>
-          <div className='gap-12 hidden md:flex'>
+          <div className='gap-6 hidden md:flex lg:gap-12'>
             {mainMenu.map(({ title, url}) => {
               return (
-                <Link key={title} href={url} className='py-6 flex items-center' aria-label={`Go to ${title} page`}>
+                <Link key={title} href={url} className={!active ? 'py-6 flex items-center transition-all' : 'py-4 flex items-center transition-all'} aria-label={`Go to ${title} page`}>
                   {title}
                 </Link>
               )

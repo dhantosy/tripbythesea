@@ -9,8 +9,7 @@ export default function CardHorizontalDestination({
   blurDataUrl,
   topText,
   title,
-  duration,
-  price,
+  reviews,
   url,
 }: CardHorizontaDestinationlProp) {
 
@@ -29,18 +28,17 @@ export default function CardHorizontalDestination({
       </div>
       <div className='absolute z-index-10 top-0 left-0 p-6 text-neutral-50 h-full w-full'>
         <div className='flex flex-col justify-between h-full'>
-          <div>{topText}</div>
+          <div className='text-xl'>{topText}</div>
           <div className='flex justify-between gap-6 align-bottom'>
             <div>
               <div>
-                <div>{title}</div>
+                <div className='text-3xl mb-1'>{title}</div>
               </div>
-              <div className='flex gap-6'>
-                <div>{duration}</div>
-                <div>{price}</div>
+              <div className='flex'>
+                <div className='text-neutral-300'>{reviews}</div>
               </div>
             </div>
-            <Button asChild size='sm'>
+            <Button asChild size='md' className='self-end'>
               <Link href={url} aria-label={`Go to ${title} page`}>Check Now</Link>
             </Button>
           </div>

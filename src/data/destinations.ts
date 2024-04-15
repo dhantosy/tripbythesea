@@ -7,8 +7,7 @@ export const destinations = [
     title: 'Komodo Island',
     topText: 'Indonesia',
     url: '/destinations/komodo-island',
-    duration: '3 - 5 Days',
-    price: 'from $500',
+    reviews: '2 Reviews',
   },
   {
     image: BannerImage.src,
@@ -16,8 +15,7 @@ export const destinations = [
     title: 'Nusa Penida',
     topText: 'Indonesia',
     url: '/destinations/komodo-island',
-    duration: '3 - 5 Days',
-    price: 'from $500',
+    reviews: '2 Reviews',
   },
   {
     image: BannerImage.src,
@@ -25,8 +23,7 @@ export const destinations = [
     title: 'Komodo Island',
     topText: 'Indonesia',
     url: '/destinations/komodo-island',
-    duration: '3 - 5 Days',
-    price: 'from $500',
+    reviews: '2 Reviews',
   },
   {
     image: BannerImage.src,
@@ -34,8 +31,7 @@ export const destinations = [
     title: 'Nusa Penida',
     topText: 'Indonesia',
     url: '/destinations/komodo-island',
-    duration: '3 - 5 Days',
-    price: 'from $500',
+    reviews: '2 Reviews',
   },
 ];
 

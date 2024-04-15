@@ -3,6 +3,7 @@ import BannerImage from '@public/images/komodo-2.jpg';
 import PopularDestinations from '@/components/section/PopularDestinations';
 import TopGuides from '@/components/section/TopGuides';
 import Container from '@/components/section/Container';
+import FeaturedReviews from '@/components/section/FeaturedReviews';
 
 export default function Home() {
 
@@ -22,6 +23,9 @@ export default function Home() {
       />
       <section className='pt-24'>
         <PopularDestinations />
+      </section>
+      <section className='pt-24'>
+        <FeaturedReviews />
       </section>
       <section className='pt-24'>
         <TopGuides />

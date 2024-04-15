@@ -48,7 +48,7 @@ export default function CardUserList({
           </div>
         </div>
         <div className='flex-[25%] px-3 items-center flex flex-col gap-4 justify-center'>
-          <div>User Score</div>
+          <div>User Rating</div>
           <div className='flex items-center justify-center bg-rose-500 text-neutral-50 w-24 h-24 overflow-hidden rounded-2xl text-3xl'>{score}</div>
         </div>
       </div>

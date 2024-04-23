@@ -6,7 +6,7 @@ export default function FeaturedReviews() {
 
   return (
     <Container>
-      <div className='relative p-7 rounded-2xl overflow-hidden after:content-[""] after:w-full after:from-neutral-800 after:to-rose-900 after:bg-gradient-to-b after:from-40% after:h-full after:absolute after:top-0 after:left-0'>
+      <div className='relative p-7 rounded-2xl overflow-hidden after:content-[""] after:w-full after:from-neutral-800 after:to-[#c76d17] after:bg-gradient-to-b after:from-40% after:h-full after:absolute after:top-0 after:left-0'>
         <div className='relative z-10'>
           <div className='mb-10 text-neutral-50'>
             <h2 className='text-4xl'>Featured User Reviews</h2>

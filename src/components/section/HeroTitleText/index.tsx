@@ -4,7 +4,7 @@ import { HeroTitleTextProp } from './types'
 export default function HeroTitleText({ title, subtitle }: HeroTitleTextProp) {
 
   return (
-    <div className='bg-neutral-800 h-80 flex flex-col'>
+    <section className='bg-neutral-800 h-80 flex flex-col'>
       <Container>
         <div className='flex flex-col h-full justify-end py-10'>
           <h1 className='text-neutral-50 text-6xl'>{title}</h1>
@@ -13,6 +13,6 @@ export default function HeroTitleText({ title, subtitle }: HeroTitleTextProp) {
           )}
         </div>
       </Container>
-    </div>
+    </section>
   )
 };

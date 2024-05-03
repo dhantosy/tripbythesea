@@ -1,7 +1,7 @@
-import CardHighlight from '@/components/ui/CardHighlight';
-import CardHorizontalNews from '@/components/ui/CardHorizontalNews'
-import BannerImage from '@public/images/komodo-2.jpg';
 import Container from '@/components/section/Container';
+import HeroTitleText from '@/components/section/HeroTitleText';
+import BannerImage from '@public/images/komodo-2.jpg';
+import CardVerticalNews from '@/components/ui/CardVerticalNews';
 
 const data = [
   {
@@ -25,45 +25,45 @@ const data = [
     subtitle: 'Dive into the Depths with Confidence: Expert Insights, Reviews, and Tips on Essential Diving Gear.',
     url: '/',
   },
+  {
+    image: BannerImage.src,
+    blurDataUrl: BannerImage.blurDataURL,
+    title: 'Exploring the Depths of Diving Equipment',
+    subtitle: 'Explore the Ocean`s Mysteries Safely and Stylishly with Our Comprehensive Guide to Diving Gear Essentials.',
+    url: '/',
+  },
+  {
+    image: BannerImage.src,
+    blurDataUrl: BannerImage.blurDataURL,
+    title: 'Your Ultimate Dive Equipment Guide',
+    subtitle: 'Dive into the Depths with Confidence: Expert Insights, Reviews, and Tips on Essential Diving Gear.',
+    url: '/',
+  },
 ];
 
-export default function TopGuides() {
+export default function AboutUs() {
 
   return (
-    <Container>
-      <div className='mb-10'>
-        <h2 className='text-3xl md:text-5xl font-semibold'>Insider Guides</h2>
-        <p className='text-xl mt-1 md:text-2xl font-playfair italic md:max-w-screen-3sm'>Our exclusive insider guide, offering unparalleled access to off-the-beaten-path dive and snorkel spots</p>
-      </div>
-      <div className='flex flex-col md:flex-row flex-wrap -m-5'>
-        <div className='flex-[50%] p-5'>
-          <CardHighlight
-            img={data[0].image}
-            imgAlt={data[0].title}
-            blurDataUrl={data[0].blurDataUrl || ''}
-            title={data[0].title}
-            subtitle={data[0].subtitle}
-            url={data[0].url}
-          />
-        </div>
-        <div className='flex-[50%] p-5'>
+    <main>
+      <HeroTitleText title='Insider Guides' img={BannerImage.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImage.blurDataURL} />
+      <Container>
+        <div className='flex flex-wrap -m-5 my-10'>
           {data.map(({ image, blurDataUrl, title, subtitle, url }) => {
-
             return (
-              <div key={title} className='mb-9 last:mb-0'>
-                <CardHorizontalNews
+              <div className='basis-[100%] md:basis-[33.33%] p-5 grow-0' key={title}>
+                <CardVerticalNews
                   img={image}
                   imgAlt={title}
                   blurDataUrl={blurDataUrl || ''}
+                  url={url}
                   title={title}
                   subtitle={subtitle}
-                  url={url}
                 />
               </div>
             )
           })}
         </div>
-      </div>
-    </Container>
-  )
-};
+      </Container>
+    </main>
+  );
+}

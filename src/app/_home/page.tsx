@@ -21,20 +21,20 @@ export default function Home() {
         btnSecondaryText='Other Destinations'
         btnSecondaryUrl='/destinations'
       />
-      <section className='pt-24'>
+      <section className='pt-12 md:pt-16'>
         <PopularDestinations />
       </section>
-      <section className='pt-24'>
+      <section className='pt-8 md:pt-12'>
         <FeaturedReviews />
       </section>
-      <section className='pt-24'>
+      <section className='pt-12 md:pt-16'>
         <TopGuides />
       </section>
-      <section className='pt-24'>
+      <section className='pt-16 md:pt-20'>
         <Container>
-          <div className='max-w-[70%]'>
-            <h2>Hello from trip by the sea!</h2>
-            <p>Our mission is to bring the wonders of the underwater world to the surface through insightful journalism. We strive to promote environmental awareness, conservation efforts, and a deeper understanding of marine ecosystems. Through our articles, videos, and photography, we aim to ignite curiosity, foster appreciation, and encourage responsible exploration of the ocean realm.</p>
+          <div className='max-w-[100%] md:max-w-[70%]'>
+            <h2 className='text-3xl md:text-5xl font-semibold mb-3 font-playfair italic'>Hello from trip by the sea!</h2>
+            <p className='text-xl mt-1 md:text-2xl '>Welcome to trip by the sea! Your ultimate destination for immersive journalism in the world of diving and snorkeling. At trip by the sea, we are passionate about exploring the depths of the ocean, uncovering its mysteries, and sharing captivating stories that inspire and educate.</p>
           </div>
         </Container>
       </section>

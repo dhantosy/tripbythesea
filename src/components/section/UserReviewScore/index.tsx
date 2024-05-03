@@ -37,7 +37,7 @@ export default function UserReviewScore({ score, highlight, checklist, img, imgA
             })}
           </div>
           <div className='flex-[50%] px-5'>
-            <h4 className='font-semibold text-xl mb-3'>Score Breakdown</h4>
+            <h4 className='font-semibold text-xl mb-3 mt-5 md:mt-0'>Score Breakdown</h4>
             {checklist.map(({ title, rate }) => {
               return (
                 <div key={title}>

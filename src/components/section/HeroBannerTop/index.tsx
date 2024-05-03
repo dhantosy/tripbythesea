@@ -31,12 +31,12 @@ export default function HeroBannerTop({
           blurDataURL={blurDataUrl}
         />
       </div>
-      <div className='absolute bottom-16 left-0 w-full'>
+      <div className='absolute bottom-8 md:bottom-16 left-0 w-full'>
         <Container>
-          <div className='text-1xl md:text-2xl mb-4 text-neutral-50'>{pretext}</div>
+          <div className='text-2xl md:text-4xl mb-4 text-neutral-50'>{pretext}</div>
           <h1 className='text-4xl md:text-8xl mb-4 text-neutral-50'>{title}</h1>
-          <p className='text-lg md:text-xl text-neutral-200 md:max-w-xl'>{subtitle}</p>
-          <div className='flex mt-9 gap-4'>
+          <p className='text-xl md:text-3xl text-neutral-200 md:max-w-xl font-playfair italic'>{subtitle}</p>
+          <div className='flex flex-col mt-9 gap-4 sm:flex-row'>
             <Button asChild size='lg'>
               <Link href={btnUrl} aria-label={`Go to ${title} page`}>{btnText}</Link>
             </Button>

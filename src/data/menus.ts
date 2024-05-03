@@ -9,6 +9,6 @@ export const mainMenu = [
   },
   {
     title: 'Insider Guides',
-    url: '/'
+    url: '/insider-guides'
   },
 ];

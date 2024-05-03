@@ -27,7 +27,7 @@ const usersReview = [
   {
     img: UserDefault.src,
     imgAlt: 'user default photo',
-    tag: 'Individual Contributor',
+    tag: 'Contributor',
     title: 'Awe-Inspiring Experience!',
     username: 'John Doe',
     url: '/destinations/komodo-island/john-doe',
@@ -56,7 +56,7 @@ export default function KomodoIslandPage() {
       />
       <Container>
         <DestinationDetailLayout>
-          <section className='my-20'>
+          <section className='my-12 md:my-20'>
             <OverviewDestinationPage
               title='Komodo Island Overview'
               description='Komodo Island is a renowned destination located in the Indonesian archipelago, specifically within the Lesser Sunda Islands. It is a UNESCO World Heritage Site and a designated biosphere reserve, recognized for its exceptional biodiversity and unique ecosystems. Sustainable tourism practices are encouraged to minimize the ecological impact on the fragile island ecosystems. Komodo Island is a must-visit destination for nature lovers and adventure seekers, offering a rare opportunity to encounter the iconic Komodo dragon in its natural environment, explore stunning landscapes, and discover the rich marine biodiversity of the region. With its unique wildlife, pristine beaches, and immersive experiences, Komodo Island continues to captivate travelers from around the world.'

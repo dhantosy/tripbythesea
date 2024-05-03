@@ -13,7 +13,7 @@ export default function CardHighlight({
 
   return (
     <Link href={url}>
-      <div className='relative rounded-2xl overflow-hidden h-full'>
+      <div className='relative rounded-2xl overflow-hidden h-[320px] md:h-full'>
         <div className='absolute w-full h-full after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
           <Image
             src={img}
@@ -28,7 +28,7 @@ export default function CardHighlight({
         <div className='absolute z-index-10 top-0 left-0 p-6 text-neutral-50 h-full w-full'>
           <div className='flex flex-col justify-end h-full'>
             <h3 className='my-2 text-2xl font-semibold'>{title}</h3>
-            <p className='text-neutral-200 text-lg'>{subtitle}</p>
+            <p className='text-neutral-200 text-lg line-clamp-3'>{subtitle}</p>
           </div>
         </div>
       </div>

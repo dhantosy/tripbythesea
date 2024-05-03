@@ -11,10 +11,10 @@ export default function AboutUs() {
       <Container>
         <div>
           <div className='py-10'>
-            <p className='text-3xl leading-normal'>Welcome to trip by the sea! Your ultimate destination for immersive journalism in the world of diving and snorkeling. At trip by the sea, we are passionate about exploring the depths of the ocean, uncovering its mysteries, and sharing captivating stories that inspire and educate.</p>
+            <p className='text-xl md:text-3xl leading-normal'>Welcome to trip by the sea! Your ultimate destination for immersive journalism in the world of diving and snorkeling. At trip by the sea, we are passionate about exploring the depths of the ocean, uncovering its mysteries, and sharing captivating stories that inspire and educate.</p>
           </div>
-          <div className='relative mt-6 mb-12'>
-            <div className='relative rounded-2xl overflow-hidden w-full pb-[30%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+          <div className='relative mt-0 mb-6 md:mt-6 md:mb-12'>
+            <div className='relative rounded-2xl overflow-hidden w-full pb-[50%] md:pb-[30%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
               <Image
                 src={BannerImage.src}
                 alt='about us image'

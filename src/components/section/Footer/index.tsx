@@ -21,9 +21,9 @@ export default function Footer() {
       </div>
       <Container>
         <div className='text-neutral-50 relative pt-44'>
-          <div className='flex justify-between gap-5 items-end'>
+          <div className='flex flex-col md:flex-row justify-between gap-5 items-start md:items-end'>
             <div>
-              <div>
+              <div className='max-w-52 md:max-w-full'>
                 <Link href='/' className='py-7' aria-label='go to home'>
                   <Image
                     src={LogoMain}
@@ -45,7 +45,7 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div className='flex flex-col items-end'>
+            <div className='flex flex-col items-start md:items-end'>
               <div className='flex gap-10'>
                 {mainMenu.map(({ title, url }) => {
                   return (

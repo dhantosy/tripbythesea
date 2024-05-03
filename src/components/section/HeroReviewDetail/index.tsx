@@ -26,7 +26,7 @@ export default function HeroReviewDetail({
       </div>
       <div className='absolute bottom-8 left-0 w-full'>
         <Container>
-          <p className='text-lg md:text-3xl mb-4 text-neutral-50'>{destination}</p>
+          <p className='text-lg md:text-3xl mb-2 md:mb-4 text-neutral-50'>{destination}</p>
           <h1 className='text-3xl md:text-6xl text-neutral-50'>{title}</h1>
         </Container>
       </div>

@@ -15,14 +15,14 @@ export default function Destinations() {
         title='Sea Trip Destinations'
         subtitle='Exploring the Enchanting Wonders of Komodo Island'
       />
-      <div className='relative -mt-32 mb-32'>
+      <div className='relative -mt-28 mb-32'>
         <Container>
-          <div className='flex flex-wrap -m-5'>
+          <div className='flex flex-wrap -mx-5'>
             {destinations.map((item) => {
               const { image, blurDataUrl, title, topText, url, reviews } = item;
 
               return (
-                <div className='flex-[50%] p-5' key={item.title}>
+                <div className='flex-[100%] md:flex-[50%] px-5' key={item.title}>
                   <CardHorizontalDestination
                     img={image}
                     imgAlt={title}

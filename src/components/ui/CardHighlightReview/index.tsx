@@ -16,7 +16,7 @@ export default function CardHighlightReview({
   return (
     <Link href={url} aria-label={`Go to ${user} ${destination} review page`} className='relative top-0 overflow-hidden block shadow-md rounded-2xl hover:shadow-xl transition-all bg-gray-50 hover:-top-1'>
       <div className='relative overflow-hidden'>
-        <div className='w-full pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+        <div className='w-full h-[160px] md:h-full md:pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
           <Image
             src={img}
             alt={imgAlt}

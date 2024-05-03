@@ -28,7 +28,7 @@ export default function HeroDestination({
       <div className='absolute top-40 left-0 w-full'>
         <Container>
           <div className='text-lg md:text-2xl mb-2 md:mb-4 text-neutral-50'>{pretext}</div>
-          <h1 className='text-2xl md:text-5xl md:max-w-[800px] mb-8 md:mb-16 text-neutral-50'>{title}</h1>
+          <h1 className='text-2xl md:text-5xl md:max-w-[800px] mb-8 md:mb-16 text-neutral-50 font-medium'>{title}</h1>
         </Container>
         <div className='flex flex-nowrap overflow-x-auto m-auto w-full max-w-[1260px]'>
           {gallery.map(({ src, srcBlurData, alt }) => {

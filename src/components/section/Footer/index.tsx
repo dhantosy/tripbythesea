@@ -46,7 +46,7 @@ export default function Footer() {
               </div>
             </div>
             <div className='flex flex-col items-start md:items-end'>
-              <div className='flex gap-10'>
+              <div className='flex flex-col 2xs:flex-row gap-4 md:gap-10'>
                 {mainMenu.map(({ title, url }) => {
                   return (
                     <Link key={title} href={url} className=''>

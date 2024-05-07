@@ -16,7 +16,7 @@ export default function Home() {
         pretext='Indonesia'
         title='Komodo Island'
         subtitle='Exploring the Enchanting Wonders of Komodo Island: Indonesia`s Natural Treasure'
-        btnText='Check Now'
+        btnText='See Detail'
         btnUrl='/destinations/komodo-island'
         btnSecondaryText='Other Destinations'
         btnSecondaryUrl='/destinations'

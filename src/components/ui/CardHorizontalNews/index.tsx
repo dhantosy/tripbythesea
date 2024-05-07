@@ -30,8 +30,9 @@ export default function CardHorizontalNews({
           </div>
         </div>
         <div className='flex-[100%] md:flex-[65%] px-3'>
-          <h3 className='my-2 text-xl font-semibold'>{title}</h3>
-          <p className='text-neutral-600 line-clamp-3'>{subtitle}</p>
+          <h3 className='mb-2 mt-2 md:mt-0 text-xl font-semibold'>{title}</h3>
+          <p className='text-neutral-600 line-clamp-2'>{subtitle}</p>
+          <p className='text-neutral-600 mt-4 font-medium'>Read More</p>
         </div>
       </div>
     </Link>

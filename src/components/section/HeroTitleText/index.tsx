@@ -22,7 +22,7 @@ export default function HeroTitleText({ title, subtitle, img, imgAlt, blurDataUr
       )}
       <Container>
         <div className='flex flex-col h-full justify-end py-10 relative z-10'>
-          <h1 className='text-neutral-50 text-5xl md:text-6xl'>{title}</h1>
+          <h1 className='text-neutral-50 text-3xl md:text-6xl'>{title}</h1>
           {subtitle && (
             <p className='text-neutral-300 text-xl mt-4'>{subtitle}</p>
           )}

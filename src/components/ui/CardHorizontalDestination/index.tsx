@@ -40,7 +40,7 @@ export default function CardHorizontalDestination({
                 </div>
               </div>
               <Button size='md' className='hidden self-end md:flex'>
-                Check Now
+                See Detail
               </Button>
             </div>
           </div>

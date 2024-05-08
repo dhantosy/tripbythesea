@@ -75,8 +75,9 @@ export default function KomodoIslandPage() {
               ]}
             />
           </section>
-          <section>
-            <h2 id='destination-review' className='text-3xl font-bold'>Users Review</h2>
+          <section className='relative'>
+            <h2 className='text-3xl font-bold'>Users Review</h2>
+            <div id='destination-review' className='absolute -top-28' />
             <div>
               {usersReview.map(({ img, imgAlt, tag, title, username, url, score, highlight }, index) => {
                 return (

@@ -1,6 +1,6 @@
 import Container from '@/components/section/Container';
 import HeroTitleText from '@/components/section/HeroTitleText';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImageEquipment from '@public/images/blog/blog-dive-equipment.jpg';
 import CardVerticalNews from '@/components/ui/CardVerticalNews';
 import { insiderGuidesData } from '@/data/insiderGuides';
 
@@ -8,7 +8,7 @@ export default function TopFiveDivingEquipmentBrands() {
 
   return (
     <main>
-      <HeroTitleText title='Top 5 Diving Equipment Brands' img={BannerImage.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImage.blurDataURL} />
+      <HeroTitleText title='Top 5 Diving Equipment Brands' img={BannerImageEquipment.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImageEquipment.blurDataURL} />
       <Container>
         <div className='flex flex-col md:flex-row -mx-5'>
           <div className='px-5 mt-8 flex-[75%]'>

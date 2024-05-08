@@ -1,6 +1,6 @@
 import Container from '@/components/section/Container';
 import HeroTitleText from '@/components/section/HeroTitleText';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImageAvoid from '@public/images/blog/blog-dive-avoid.jpg';
 import CardVerticalNews from '@/components/ui/CardVerticalNews';
 import { insiderGuidesData } from '@/data/insiderGuides';
 
@@ -8,7 +8,7 @@ export default function ThingsToAvoidDuringScubaDiving() {
 
   return (
     <main>
-      <HeroTitleText title='10 Things to Avoid During Diving' img={BannerImage.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImage.blurDataURL} />
+      <HeroTitleText title='10 Things to Avoid During Diving' img={BannerImageAvoid.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImageAvoid.blurDataURL} />
       <Container>
         <div className='flex flex-col md:flex-row -mx-5'>
           <div className='px-5 mt-8 flex-[75%]'>

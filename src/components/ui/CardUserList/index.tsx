@@ -17,7 +17,7 @@ export default function CardUserList({
   return (
     <Link href={url} className='relative top-0 my-10 block p-6 shadow-md rounded-xl hover:shadow-xl transition-all bg-gray-50 hover:-top-1 last:mb-0'>
       <div className='flex flex-wrap flex-col md:flex-row -mx-3'>
-        <div className='flex-[25%] pt-3 pb-5 md:px-3 flex border-b-2 md:border-r-2 md:border-b-0 justify-center gap-7'>
+        <div className='flex-[25%] pt-3 pb-5 md:px-3 flex border-b-2 md:border-r-2 md:border-b-0 justify-around gap-7'>
           <div className='justify-center items-center flex flex-col'>
             <div className='relative overflow-hidden rounded-full'>
               <Image

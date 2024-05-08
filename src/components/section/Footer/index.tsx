@@ -9,7 +9,7 @@ import FooterBg from '@public/images/footer-bg.png'
 export default function Footer() {
 
   return (
-    <footer className='bg-neutral-950 relative mt-52 pb-10'>
+    <footer className='bg-[#010101] relative mt-52 pb-10'>
       <div className='absolute w-full h-80 -top-24'>
         <Image
           src={FooterBg}

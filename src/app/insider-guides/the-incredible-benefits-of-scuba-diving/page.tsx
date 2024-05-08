@@ -1,6 +1,6 @@
 import Container from '@/components/section/Container';
 import HeroTitleText from '@/components/section/HeroTitleText';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImageRelax from '@public/images/blog/blog-dive-relax.jpg';
 import CardVerticalNews from '@/components/ui/CardVerticalNews';
 import { insiderGuidesData } from '@/data/insiderGuides';
 
@@ -8,7 +8,7 @@ export default function BenefitsScubaDiving() {
 
   return (
     <main>
-      <HeroTitleText title='The Incredible Benefits of Scuba Diving' img={BannerImage.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImage.blurDataURL} />
+      <HeroTitleText title='The Incredible Benefits of Scuba Diving' img={BannerImageRelax.src} imgAlt='Insider guides banner image' blurDataUrl={BannerImageRelax.blurDataURL} />
       <Container>
         <div className='flex flex-col md:flex-row -mx-5'>
           <div className='px-5 mt-8 flex-[75%]'>

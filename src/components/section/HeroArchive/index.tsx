@@ -26,7 +26,7 @@ export default function HeroArchive({
       </div>
       <div className='absolute bottom-36 md:bottom-44 left-0 w-full'>
         <Container>
-          <h1 className='font-medium text-3xl md:text-6xl mb-4 text-neutral-50'>{title}</h1>
+          <h1 className='font-medium text-3xl mb-1 md:text-6xl md:mb-4 text-neutral-50'>{title}</h1>
           <p className='text-xl md:text-3xl text-neutral-300 md:max-w-2xl font-playfair italic'>{subtitle}</p>
         </Container>
       </div>

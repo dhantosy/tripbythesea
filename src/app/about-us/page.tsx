@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Container from '@/components/section/Container';
 import HeroTitleText from '@/components/section/HeroTitleText';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImage from '@public/images/destination-banner.jpg';
+import HeroImage from '@public/images/about.jpg';
 
 export default function AboutUs() {
 
   return (
     <main>
-      <HeroTitleText title='About Us' />
+      <HeroTitleText title='About Us' img={HeroImage.src} imgAlt='Insider guides banner image' blurDataUrl={HeroImage.blurDataURL} />
       <Container>
         <div>
           <div className='py-10'>

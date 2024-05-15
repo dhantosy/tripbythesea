@@ -12,9 +12,9 @@ export default function CardHighlight({
 }: CardHighlightProp) {
 
   return (
-    <Link href={url}>
+    <Link href={url} className='group'>
       <div className='relative rounded-2xl overflow-hidden h-[320px] md:h-full'>
-        <div className='absolute w-full h-full after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+        <div className='absolute w-full h-full after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute scale-100 group-hover:scale-110 transition-transform'>
           <Image
             src={img}
             alt={imgAlt}
@@ -29,6 +29,7 @@ export default function CardHighlight({
           <div className='flex flex-col justify-end h-full'>
             <h3 className='my-2 text-2xl font-semibold'>{title}</h3>
             <p className='text-neutral-200 text-lg line-clamp-3'>{subtitle}</p>
+            <p className='text-neutral-200 mt-4 font-medium'>Read More</p>
           </div>
         </div>
       </div>

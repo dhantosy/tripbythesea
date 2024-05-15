@@ -3,4 +3,6 @@ export interface UserReviewInfoProp {
   imgAlt: string;
   username: string;
   description: string;
+  website?: string;
+  instagram?: string;
 }

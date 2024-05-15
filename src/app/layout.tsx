@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Playfair_Display, Albert_Sans} from 'next/font/google';
 import Header from '@/components/section/Header';
@@ -42,6 +43,11 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
       </head>
       <body suppressHydrationWarning className={`${playfairDisplay.className} ${albertSans.className}`}>
+        <NextTopLoader
+          color='#BE123C'
+          showSpinner={false}
+          height={4}
+        />
         <Header />
         {children}
         <SpeedInsights />

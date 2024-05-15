@@ -16,7 +16,7 @@ export default function CardHorizontalDestination({
   return (
     <Link href={url} aria-label={`Go to ${title} page`}>
       <div className='relative rounded-2xl top-0 overflow-hidden mb-7  md:mb-10 hover:shadow-xl transition-all hover:-top-2'>
-        <div className='w-full pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+        <div className='w-full pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-40 after:h-full after:absolute'>
           <Image
             src={img}
             alt={imgAlt}
@@ -40,7 +40,7 @@ export default function CardHorizontalDestination({
                 </div>
               </div>
               <Button size='md' className='hidden self-end md:flex'>
-                Check Now
+                See Detail
               </Button>
             </div>
           </div>

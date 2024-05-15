@@ -1,6 +1,6 @@
 import Container from '@/components/section/Container';
 import HeroArchive from '@/components/section/HeroArchive';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImage from '@public/images/guide-banner.jpg';
 import CardHorizontalDestination from '@/components/ui/CardHorizontalDestination';
 import { destinations } from '@/data/destinations';
 
@@ -13,7 +13,7 @@ export default function Destinations() {
         blurDataUrl={BannerImage.blurDataURL || ''}
         imgAlt='Destination list page background'
         title='Sea Trip Destinations'
-        subtitle='Exploring the Enchanting Wonders of Komodo Island'
+        subtitle='Explore Our Curated Sea Destinations'
       />
       <div className='relative -mt-28 mb-32'>
         <Container>

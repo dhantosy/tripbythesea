@@ -13,11 +13,13 @@ export default function OverviewDestinationPage({
 }: OverviewDestinationPageProp) {
 
   return (
-    <div id='destination-overview'>
+    <div className='relative'>
+      <div id='destination-overview' className='absolute -top-32' />
       <h2 className='text-3xl font-bold'>{title}</h2>
       <p className='mt-3'>{description}</p>
       {subtitle0 && (
-        <h3 id='destination-wildlife' className='mt-12 text-2xl font-semibold flex gap-3 items-center'>
+        <h3 className='mt-12 text-2xl font-semibold flex gap-3 items-center relative'>
+          <div id='destination-wildlife' className='absolute -top-28' />
           <span>
             <Image
               src={IconWildflife}
@@ -41,7 +43,8 @@ export default function OverviewDestinationPage({
         </ul>
       ) : null}
       {subtitle1 && (
-        <h3 id='destination-activities' className='mt-12 text-2xl font-semibold flex gap-3 items-center'>
+        <h3 className='mt-12 text-2xl font-semibold flex gap-3 items-center relative'>
+          <div id='destination-activities' className='absolute -top-28' />
           <span className='flex'>
             <Image
               src={IconActivity}

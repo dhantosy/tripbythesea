@@ -12,11 +12,11 @@ export default function CardHorizontalNews({
 }: CardHorizontalNewsProp) {
 
   return (
-    <Link href={url}>
+    <Link href={url} className='group'>
       <div className='flex flex-wrap -mx-3'>
         <div className='flex-[100%] md:flex-[35%] px-3'>
           <div className='relative rounded-2xl overflow-hidden'>
-            <div className='w-full pb-[50%] md:pb-[80%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+            <div className='w-full pb-[50%] md:pb-[80%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute scale-100 group-hover:scale-110 transition-transform'>
               <Image
                 src={img}
                 alt={imgAlt}
@@ -30,8 +30,9 @@ export default function CardHorizontalNews({
           </div>
         </div>
         <div className='flex-[100%] md:flex-[65%] px-3'>
-          <h3 className='my-2 text-xl font-semibold'>{title}</h3>
-          <p className='text-neutral-600 line-clamp-3'>{subtitle}</p>
+          <h3 className='mb-2 mt-2 md:mt-0 text-xl font-semibold group-hover:text-rose-500 transition-colors'>{title}</h3>
+          <p className='text-neutral-600 line-clamp-2'>{subtitle}</p>
+          <p className='text-neutral-600 mt-4 font-medium'>Read More</p>
         </div>
       </div>
     </Link>

@@ -7,8 +7,8 @@ export default function PopularDestinations() {
   return (
     <Container>
       <div className='mb-5 relative md:mb-10'>
-        <h2 className='text-3xl md:text-5xl font-semibold'>Top Destinations</h2>
-        <p className='text-xl mt-1 md:text-2xl font-playfair italic'>The most popular diving site destinations</p>
+        <h2 className='text-3xl md:text-5xl font-semibold'>Featured Destinations</h2>
+        <p className='text-xl mt-1 md:text-2xl font-playfair italic'>The most popular sea trip destinations</p>
       </div>
       <div className='flex flex-wrap -mx-5'>
         {destinations.map((item) => {

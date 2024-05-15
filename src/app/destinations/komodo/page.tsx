@@ -4,43 +4,8 @@ import OverviewDestinationPage from '@/components/section/OverviewDestinationPag
 import DestinationDetailLayout from '@/components/section/DestinationDetailLayout';
 import CardUserList from '@/components/ui/CardUserList';
 import BannerImage from '@public/images/komodo-2.jpg';
-import UserDefault from '@public/images/user.png';
-import { gallery } from '@/data/destinations';
-
-const usersReview = [
-  {
-    img: UserDefault.src,
-    imgAlt: 'user default photo',
-    tag: 'Tour Operator',
-    title: 'One of the Best Diving Site!',
-    username: 'Bali Dive Center',
-    url: '/destinations/komodo-island/john-doe',
-    score: '9.1',
-    highlight: [
-      'Crystal Clear Sea Water',
-      'Rich Diversity of Sea Creatures',
-      'Vibrant Coral Gardens',
-      'Manta Point!',
-      'Quite Affordable'
-    ]
-  },
-  {
-    img: UserDefault.src,
-    imgAlt: 'user default photo',
-    tag: 'Contributor',
-    title: 'Awe-Inspiring Experience!',
-    username: 'John Doe',
-    url: '/destinations/komodo-island/john-doe',
-    score: '8.6',
-    highlight: [
-      'Crystal Clear Sea Water',
-      'Rich Diversity of Sea Creatures',
-      'Vibrant Coral Gardens',
-      'Manta Point!',
-      'Quite Affordable'
-    ]
-  },
-]
+import { galleryKomodo } from '@/data/destinations';
+import { usersReview } from './data';
 
 export default function KomodoIslandPage() {
 
@@ -50,15 +15,15 @@ export default function KomodoIslandPage() {
         img={BannerImage.src}
         blurDataUrl={BannerImage.blurDataURL || ''}
         imgAlt='Komodo ssland page background'
-        pretext='Komodo Island'
-        title='Tour to the Arctic is an exotic journey on the verge of extreme'
-        gallery={gallery}
+        pretext='Komodo'
+        title='A Journey to One of Indonesia`s Natural Treasures'
+        gallery={galleryKomodo}
       />
       <Container>
         <DestinationDetailLayout>
-          <section className='my-12 md:my-20'>
+          <section className='my-8 md:my-20'>
             <OverviewDestinationPage
-              title='Komodo Island Overview'
+              title='Komodo Overview'
               description='Komodo Island is a renowned destination located in the Indonesian archipelago, specifically within the Lesser Sunda Islands. It is a UNESCO World Heritage Site and a designated biosphere reserve, recognized for its exceptional biodiversity and unique ecosystems. Sustainable tourism practices are encouraged to minimize the ecological impact on the fragile island ecosystems. Komodo Island is a must-visit destination for nature lovers and adventure seekers, offering a rare opportunity to encounter the iconic Komodo dragon in its natural environment, explore stunning landscapes, and discover the rich marine biodiversity of the region. With its unique wildlife, pristine beaches, and immersive experiences, Komodo Island continues to captivate travelers from around the world.'
               subtitle0='Wildlife'
               subtitleDesc0={[

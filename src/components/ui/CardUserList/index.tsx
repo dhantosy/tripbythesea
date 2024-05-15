@@ -39,7 +39,7 @@ export default function CardUserList({
           <div className='pl-0 md:pl-5'>
             <h3 className='mb-6 text-xl font-semibold'>{title}</h3>
             <div>
-              <div className='mb-3'>Main highlights:</div>
+              <div className='mb-3'>Main Highlights:</div>
               {hightlight.length ? (
                 hightlight.map((item) => {
                   return (

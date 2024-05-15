@@ -1,6 +1,6 @@
 import Container from '@/components/section/Container';
 import HeroTitleText from '@/components/section/HeroTitleText';
-import BannerImage from '@public/images/komodo-2.jpg';
+import BannerImage from '@public/images/about-banner.jpg';
 import CardVerticalNews from '@/components/ui/CardVerticalNews';
 import { insiderGuidesData } from '@/data/insiderGuides';
 

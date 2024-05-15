@@ -17,7 +17,7 @@ export default function Home() {
         title='Raja Ampat'
         subtitle='Explore the Enchanting Wonders of Raja Ampat Indonesia`s Natural Treasure'
         btnText='See Detail'
-        btnUrl='/destinations/komodo-island'
+        btnUrl='/destinations/raja-ampat'
         btnSecondaryText='Other Destinations'
         btnSecondaryUrl='/destinations'
       />

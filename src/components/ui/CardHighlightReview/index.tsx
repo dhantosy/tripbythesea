@@ -14,9 +14,9 @@ export default function CardHighlightReview({
 }: CardHighlightReviewProp) {
 
   return (
-    <Link href={url} aria-label={`Go to ${user} ${destination} review page`} className='relative top-0 overflow-hidden block shadow-md rounded-2xl hover:shadow-xl transition-all bg-gray-50 hover:-top-1'>
+    <Link href={url} aria-label={`Go to ${user} ${destination} review page`} className='relative w-full top-0 overflow-hidden block shadow-md rounded-2xl hover:shadow-xl transition-all bg-gray-50 hover:-top-1 group'>
       <div className='relative overflow-hidden'>
-        <div className='w-full h-[160px] md:h-full md:pb-[55%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
+        <div className='w-full h-[160px] md:h-full md:pb-[70%] after:content-[""] after:w-full after:bg-black after:opacity-30 after:h-full after:absolute'>
           <Image
             src={img}
             alt={imgAlt}
@@ -33,7 +33,7 @@ export default function CardHighlightReview({
       </div>
       <div className='flex flex-col items-center text-center relative -top-7 px-3'>
         <div className='flex items-center justify-center bg-rose-500 text-neutral-50 w-14 h-14 overflow-hidden rounded-full text-xl font-semibold'>{score}</div>
-        <div className='mt-4 mb-2 text-lg font-semibold'>{title}</div>
+        <div className='mt-4 mb-2 text-lg font-semibold group-hover:text-rose-500 transition-colors'>{title}</div>
         <div>{user}</div>
       </div>
     </Link>

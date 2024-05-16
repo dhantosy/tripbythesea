@@ -6,8 +6,8 @@ export default function UserReviewInfo({ img, imgAlt, username, description, web
   return (
     <section className='my-8 bg-neutral-100 p-6 rounded-2xl'>
       <h2 className='mb-4'>About the Author</h2>
-      <div className='flex flex-row gap-5'>
-        <div className='hidden md:flex basis-1/6'>
+      <div className='flex flex-col md:flex-row gap-5'>
+        <div className='flex basis-1/6'>
           <div className='relative overflow-hidden rounded-full place-self-start'>
             <Image
               src={img}

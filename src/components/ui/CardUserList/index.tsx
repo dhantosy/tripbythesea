@@ -27,7 +27,7 @@ export default function CardUserList({
                 height={80}
               />
             </div>
-            <h4 className='mt-4'>{username}</h4>
+            <h4 className='mt-4 font-semibold'>{username}</h4>
             <div>{tag}</div>
           </div>
           <div className='flex flex-col md:hidden gap-3 items-center'>

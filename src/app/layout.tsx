@@ -6,6 +6,7 @@ import Header from '@/components/section/Header';
 import Footer from '@/components/section/Footer';
 
 import '../styles/globals.css';
+import Script from 'next/script';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -41,6 +42,19 @@ export default function RootLayout({
         <meta name='msapplication-config' content='/favicons/browserconfig.xml' />
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
+
+        <meta name='google-site-verification' content='b2PIaVnoFqFLN-SEb7rpNWx_PtfYYuYf_P5iPdfcxJA' />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-6WM74GR8ZG' strategy='afterInteractive' />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-6WM74GR8ZG');
+        `}
+        </Script>
+
       </head>
       <body suppressHydrationWarning className={`${playfairDisplay.className} ${albertSans.className}`}>
         <NextTopLoader

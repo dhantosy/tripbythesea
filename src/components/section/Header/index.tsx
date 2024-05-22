@@ -49,7 +49,7 @@ export default function Header() {
           <div className='gap-6 hidden md:flex lg:gap-12'>
             {mainMenu.map(({ title, url}) => {
               return (
-                <Link key={title} href={url} className={!active ? 'py-6 flex items-center transition-all' : 'py-4 flex items-center transition-all'} aria-label={`Go to ${title} page`}>
+                <Link key={title} href={url} className={!active ? 'py-6 flex items-center transition-all hover:text-neutral-300' : 'py-4 flex items-center transition-all hover:text-neutral-300'} aria-label={`Go to ${title} page`}>
                   {title}
                 </Link>
               )

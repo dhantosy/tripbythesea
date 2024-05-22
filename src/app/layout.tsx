@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Playfair_Display, Albert_Sans} from 'next/font/google';
 import Header from '@/components/section/Header';
 import Footer from '@/components/section/Footer';
-
 import '../styles/globals.css';
-import Script from 'next/script';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -21,8 +20,19 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Trip By The Sea',
-  description: 'Trip By The Sea',
+  verification: {
+    google: 'b2PIaVnoFqFLN-SEb7rpNWx_PtfYYuYf_P5iPdfcxJA'
+  },
+  robots: 'index, follow',
+  title: 'Trip by the Sea',
+  description: 'Uncover your dream dive spot! Read diver reviews and discover the best diving destinations around the world. Find detailed info on marine life, visibility, dive sites, and more. Plan your next diving adventure with confidence!',
+  keywords: 'diving reviews, best diving destinations, dive spot, marine life, scuba diving tips, raja ampat, komodo, indonesia diving area, bali, maratua, tulamben, nusa penida, scuba gear, dive trip review, diving in bali, sea trip, coral bali, sea adventures, diving trip, snorkeling trip',
+  openGraph: {
+    title: 'Trip by the Sea',
+    description: 'Uncover your dream dive spot! Read diver reviews and discover the best diving destinations around the world. Find detailed info on marine life, visibility, dive sites, and more. Plan your next diving adventure with confidence!',
+    type: 'website',
+    images: ''
+  }
 };
 
 export default function RootLayout({
@@ -43,7 +53,6 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
 
-        <meta name='google-site-verification' content='b2PIaVnoFqFLN-SEb7rpNWx_PtfYYuYf_P5iPdfcxJA' />
         <Script src='https://www.googletagmanager.com/gtag/js?id=G-6WM74GR8ZG' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>
           {`

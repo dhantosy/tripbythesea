@@ -53,17 +53,18 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
 
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-6WM74GR8ZG' strategy='afterInteractive' />
-        <Script id='google-analytics' strategy='afterInteractive'>
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-6WM74GR8ZG');
-        `}
-        </Script>
+        <Script
+          id='google-analytics'
+          src='https://www.googletagmanager.com/gtag/js?id=G-6WM74GR8ZG'
+          strategy='afterInteractive'
+          onLoad={() => {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
+            gtag('config', 'G-6WM74GR8ZG');
+          `}}
+        />
       </head>
       <body suppressHydrationWarning className={`${playfairDisplay.className} ${albertSans.className}`}>
         <NextTopLoader
